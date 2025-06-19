@@ -1,0 +1,9 @@
+{
+    "name": "pretty-teisu-utils",
+    "tree": {
+        "$path": "Packages",
+        "pretty-teisu-utils": {
+            "$path": "src"
+        }
+    }
+}
