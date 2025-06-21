@@ -1,10 +1,9 @@
 local Teisu = require("../Packages/teisu")
-local util = require("./util")
+local deferCallback = require("./util/deferCallback")
 
 local effect = Teisu.effect
 local untrack = Teisu.peek
 local cleanup = Teisu.cleanup
-local deferCallback = util.deferCallback
 
 return function(callback: () -> (), dependencies: () -> ())
     local defer, cancel = deferCallback(function()

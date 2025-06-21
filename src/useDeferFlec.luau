@@ -1,10 +1,9 @@
 local Teisu = require("../Packages/teisu")
-local util = require("./util")
+local deferCallback = require("./util/deferCallback")
 
 type Flec<T> = (() -> T) & ((value: T) -> T)
 
 local flec = Teisu.flec
-local deferCallback = util.deferCallback
 
 return function<T>(initial_value: T): Flec<T>
     local deferFlec = flec(initial_value)

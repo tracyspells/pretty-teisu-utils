@@ -1,5 +1,3 @@
-local util = require("@self/util")
-
 return table.freeze {
     useCamera = require("@self/useCamera"),
     useViewport = require("@self/useViewport"),
@@ -8,7 +6,7 @@ return table.freeze {
     useMouse = require("@self/useMouse"),
     useTagged = require("@self/useTagged"),
     useInterval = require("@self/useInterval"),
-    useDeferCallback = util.deferCallback,
+    useDeferCallback = require("@self/util/deferCallback"),
     useDeferFlec = require("@self/useDeferFlec"),
     useDeferEffect = require("@self/useDeferEffect"),
     useDebounceCallback = require("@self/useDebounceCallback"),
