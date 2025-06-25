@@ -1,12 +1,11 @@
 local Teisu = require("../Packages/teisu")
-local util = require("./util")
+local setInterval = require("./util/setInterval")
 
 type Derivable<T> = Teisu.Derivable<T>
 
 local peek = Teisu.peek
 local effect = Teisu.effect
 local cleanup = Teisu.effect
-local setInterval = util.setInterval
 
 return function(
     callback: () -> (),
